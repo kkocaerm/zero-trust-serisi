@@ -2,55 +2,6 @@
 
 Bu klasör, Zero Trust Dönüşüm Serisi'ni **Just the Docs** temalı bir Jekyll sitesi olarak GitHub Pages üzerinde yayınlamaya hazır haldedir. Sol menüde Faz 0–4 altında gruplanmış bölümler, arama kutusu ve gezinme yapısı otomatik olarak gelir.
 
-## Kurulum Adımları
-
-### 1. GitHub'da yeni bir repo oluşturun
-
-- Repo adı: `zero-trust-serisi` (proje sitesi olduğu için bu klasör adıyla eşleşmesi önerilir, farklı bir isim de seçebilirsiniz).
-- Public (herkese açık) olmalı — GitHub Pages ücretsiz kullanım için public repo gerektirir (GitHub Pro/Team/Enterprise'da private repo'larda da Pages mümkündür).
-
-### 2. `_config.yml` dosyasını güncelleyin
-
-Bu klasördeki `_config.yml` dosyasını açın ve şu iki satırı kendi bilgilerinizle değiştirin:
-
-```yaml
-url: "https://KULLANICI_ADINIZ.github.io"
-baseurl: "/zero-trust-serisi"   # repo adınızı farklı seçtiyseniz burayı da güncelleyin
-```
-
-### 3. Dosyaları GitHub'a push edin
-
-Bu klasörün içeriğini (tüm dosyalar ve `.github/` klasörü dahil) yeni reponuzun kök dizinine push edin:
-
-```bash
-cd zero-trust-site
-git init
-git add .
-git commit -m "Zero Trust dönüşüm serisi - ilk yayın"
-git branch -M main
-git remote add origin https://github.com/KULLANICI_ADINIZ/zero-trust-serisi.git
-git push -u origin main
-```
-
-### 4. GitHub Pages'i etkinleştirin
-
-1. Repo sayfasında **Settings → Pages** yolunu izleyin.
-2. **Build and deployment → Source** kısmında **GitHub Actions**'ı seçin (Jekyll build/deploy dosyası zaten `.github/workflows/pages.yml` içinde hazır).
-3. `main` branch'e her push yaptığınızda site otomatik olarak derlenip yayınlanacaktır.
-4. Birkaç dakika içinde siteniz şu adreste yayında olacaktır:
-   `https://KULLANICI_ADINIZ.github.io/zero-trust-serisi/`
-
-### 5. (Opsiyonel) Yerelde önizleme
-
-Yayınlamadan önce bilgisayarınızda test etmek isterseniz (Ruby kurulu olmalı):
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Ardından tarayıcıda `http://localhost:4000/zero-trust-serisi/` adresini açabilirsiniz.
-
 ## Klasör Yapısı
 
 ```
