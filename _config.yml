@@ -1,0 +1,37 @@
+title: Zero Trust Dönüşüm Serisi
+description: >-
+  Microsoft güvenlik ürünleri, Fortinet/Palo Alto NGFW, Cisco ISE NAC, CASB ve SASE ile
+  Faz 0'dan Faz 4'e (Optimal) uzanan kapsamlı bir Zero Trust dönüşüm rehberi.
+
+# --- GitHub Pages proje sitesi ayarları ---
+# Aşağıdaki iki satırı kendi GitHub kullanıcı adınız/repo adınızla güncelleyin:
+url: "https://KULLANICI_ADINIZ.github.io"
+baseurl: "/zero-trust-serisi"
+
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Just the Docs tema ayarları
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Başa dön"
+
+nav_sort: case_insensitive
+
+# İçindekiler (Table of Contents) her sayfada otomatik gösterilsin
+callouts_level: quiet
+
+lang: tr
+
+footer_content: >-
+  Zero Trust Dönüşüm Serisi — Kadir tarafından hazırlanmıştır.
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
