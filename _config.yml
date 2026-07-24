@@ -4,8 +4,8 @@ description: >-
   Faz 0'dan Faz 4'e (Optimal) uzanan kapsamlı bir Zero Trust dönüşüm rehberi.
 
 # --- GitHub Pages proje sitesi ayarları ---
-# Aşağıdaki iki satırı kendi GitHub kullanıcı adınız/repo adınızla güncelleyin:
-url: "https://KULLANICI_ADINIZ.github.io"
+
+url: "https://kkocaerm.github.io"
 baseurl: "/zero-trust-serisi"
 
 remote_theme: just-the-docs/just-the-docs
